@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background size</title>
+    <style>
+      .image {
+        background-image: url('https://dummyimage.com/200X100/000/fff.png&text=cover');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width of the image is smaller than
+        the width of the container. But we
+        do not see red background anymore,
+        because image covered the whole
+        area of the container */
+        width: 200px;
+        height: 100px;
+
+        /* background-color of the container */
+        background-color: #e84610;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image"></div>
+  </body>
+</html>
